@@ -198,6 +198,11 @@ h3 {
   .director {
     color: green;
   }
+  .icomain {
+    float: left;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
   .wrap {
     margin: 10px;
     padding-top: 20px;
@@ -356,6 +361,8 @@ li a:active {
 }
 /* classes after Updates*/
 .rounded-img {
+  height: 220px;
+  width: 220px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

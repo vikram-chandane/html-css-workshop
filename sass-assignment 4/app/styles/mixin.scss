@@ -1,0 +1,14 @@
+@mixin searchmix{
+    display: inline-block;
+    height: 25px;
+}
+
+@mixin bordermix{
+		border: 1px solid;
+}
+
+@mixin rounded-corners-all($size:5px) {
+	border-radius : $size;
+	-webkit-border-radius: $size;
+	-moz-border-radius:$size;
+}

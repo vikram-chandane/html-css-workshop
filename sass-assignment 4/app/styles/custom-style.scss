@@ -1,11 +1,9 @@
-@import "mixin.less";
-@import "variable.less";
+@import "mixin.scss";
+@import "variable.scss";
 
-html, body {
+body {
   font-family: 'robotolight',sans-serif;
   color: gray;
-  margin:0px;
-  padding:0px;
 }
 
 .wrap{
@@ -15,10 +13,19 @@ html, body {
 }
 
 
+.logo {
+    width: 20%;
+    padding-top: 23px;
+}
+
+.banner {
+    width: 70%;
+    float: right;
+}
 
 input {
     display: inline-block;
-    .rounded-corners-all(6px);
+    @include rounded-corners-all(6px);
     box-sizing: "initial";
     width: 71%;
     height: 22px;
@@ -66,7 +73,7 @@ section {
 
 /* Custom page header */
 header {
-  .bordermix;
+  @include bordermix;
   border-color: #e5e5e5;
   font-family: 'robotoregular',sans-serif;
   font-size: 20px;
@@ -86,15 +93,15 @@ h3{
 }
 
 h1 {
-  font-size: @basesize+12;
+  font-size: $basesize+12;
 }
 
 h2 {
-  font-size: @basesize+10;
+  font-size: $basesize+10;
 }
 
 h3 {
-  font-size: @basesize+8;
+  font-size: $basesize+8;
 }
 
 /* Custom page footer */
@@ -130,278 +137,30 @@ h3 {
   margin-top: 28px;
 }
 
-@media screen and (min-width: 320px) and (max-width : 499px)  {
-
-  .welcome{
-      color:green;
-      font-weight: 400;
-  }
-
-  article{
-    color:red;
-  }
-
-  .director{
-    color:red;
-  }
-
-  .logo {
-      margin-left: 55px;
-  }
-
-  .banner {
-    float: right;
-    width: 100%;
-  }
-
-  .wrap{
-      margin:10px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
-
-  .resource {
-    float: left;
-    width: 100%;
-  }
-
-  .figmain {
-    display: inline-block;
-    float: left;
-    width: 100%;
-  }
-
-
-  footer {
-    background-color: #58595B;
-    clear: both;
-    padding-left: 20px;
-    width: 100%;
-  }
-
-  .service {
-    color: #FFFFFF;
-    float: left;
-    width: 100%;
-  }
-
-
-
-  .blog{
-      width:100%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .contact{
-      width:100%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .sitemap{
-      clear:both;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20em;
-      font-size: 18px;
-      color:#949293;
-      padding-top: 10px;
-      width: 60%;
-  }
-
-  figcaption{
-      margin-left: 60px;
-      margin-top: 12px;
-  }
-
-} /*End of media query for 320px*/
-
-@media screen and (min-width: 500px) and (max-width : 899px)  {
-
-  .logo {
-      margin-left: 36px;
-  }
-
-  .banner {
-    float: right;
-    width: 56%;
-  }
-
-  .welcome{
-    color:red;
-
-  }
-
-  .director{
-      color:green;
-  }
-
-
-  .icomain {
-      float: left;
-      font-size: 30px;
-      padding-bottom: 20px;
-  }
-
-
-  .wrap{
-      margin:10px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
-
-  .resource {
-    float: left;
-    width: 100%;
-  }
-
-  .figmain {
-    display: inline-block;
-    float: left;
-    width: 100%;
-  }
-
-
-  footer {
-    background-color: #58595B;
-    clear: both;
-    padding-left: 20px;
-    width: 100%;
-  }
-
-  .service {
-    color: #FFFFFF;
-    float: left;
-    width: 100%;
-  }
-
-
-
-  .blog{
-      width:100%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .contact{
-      width:100%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .sitemap{
-      clear:both;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20em;
-      font-size: 18px;
-      color:#949293;
-      padding-top: 10px;
-      width: 60%;
-  }
-
-  figcaption{
-      margin-left: 60px;
-      margin-top: 12px;
-  }
-
-
-}
-
-@media screen and (min-width: 900px)  {
-  .resource{
-      float:right;
-      width:20%;
-  }
-
-body{
-  background-color:#f4f4f4
-}
-
-  .welcome{
-    color:red;
-
-  }
-
-  .director{
-      color:green;
-  }
-
-
-  footer {
-      clear:both;
-      background-color:#58595B;
-      padding-left: 58px;
-  }
-
-  .service{
-      width:30%;
-      float:left;
-      color:#fff;
-  }
-
-
-  .blog{
-      width:30%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .contact{
-      width:35%;
-      float:left;
-      margin-left:4px;
-      color:#fff;
-  }
-
-  .sitemap{
-      clear:both;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20em;
-      font-size: 18px;
-      color:#949293;
-  }
-
-
-  .figmain{
-      float:left;
-      display:inline-block;
-      width:22%;
-  }
-
-  figcaption{
-      margin-left: 60px;
-      margin-top: 12px;
-  }
-
-  .logo {
-      width: 20%;
-      padding-top: 23px;
-  }
-
-  .banner {
-      width: 70%;
-      float: right;
-  }
-
-
-  .resource {
-      float: right;
-      width: 22%;
-  }
-
-
-}
-
-
 /* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
 
 /* nesting*/
 
@@ -450,11 +209,19 @@ li a:active {
 
 /* classes after Updates*/
 .rounded-img{
-    height: 220px;
+    @include rounded-corners-all(50%);
+    height:   220px;
     width: 220px;
-    .rounded-corners-all(50%);
 }
 
+.sitemap{
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 18px;
+    color:#949293;
+}
 
 .submit{
     float: right;
@@ -466,9 +233,9 @@ li a:active {
 }
 
 .grad {
-    .bordermix;
+    @include bordermix;
     border-color: black;
-    .rounded-corners-all(8px);
+    @include rounded-corners-all(8px);
     background: #065274; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#065274); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#065274); /* For Opera 11.1 to 12.0 */
@@ -487,7 +254,6 @@ li a:active {
 .navg{
     clear:both;
     color:#A7A5A6;
-    padding-left: 30px;
 }
 
 /*  Icomoon */
@@ -508,19 +274,74 @@ li a:active {
 
 .maincontent{
     float:left;
+    width:67%;
     padding-left: 20px;
-    padding-right: 10px;
 }
 
 
+.welcome{
+    color:#D26C6B;
+    font-weight: 400;
+    font-size: $welsize;
+}
+
+.green{
+    color:green;
+}
+
+.resource{
+    float:right;
+    width:28%;
+}
+
+.figmain{
+    float:left;
+    display:inline-block;
+    width:27%;
+}
+
+figcaption{
+    margin-left: 60px;
+    margin-top: 12px;
+
+}
 
 .clear{
     clear:both;
 }
 
+footer {
+    clear:both;
+    background-color:#58595B;
+    padding-left: 58px;
+
+    @if "$welsize is 16px" {
+        font-size: 14px;
+    }
+}
+
+.service{
+    width:30%;
+    float:left;
+    color:#fff;
+}
+
+.blog{
+    width:30%;
+    float:left;
+    margin-left:4px;
+    color:#fff;
+}
+
+.contact{
+    width:35%;
+    float:left;
+    margin-left:4px;
+    color:#fff;
+}
 
 .servicelist{
-    color:@servicecolor;
+    color:$servicecolor;
 }
 
 .copyright{
@@ -528,7 +349,7 @@ li a:active {
 }
 
 .search{
-    .searchmix;
+    @include searchmix;
 //    float:left;
 //    width: 60%;
 //    border: none;
@@ -542,16 +363,16 @@ border: none;
 }
 
 .searchsub{
-    .searchmix;
+    @include searchmix;
     width: 40%;
     color:#CC2D27;
     border-radius: initial;
-    .bordermix;
+    @include bordermix;
     border-color: red;
 }
 
 #searchcontainer{
-    .bordermix;
+    @include bordermix;
     border-color: #CC2D27;
     display: -webkit-flex; /* Safari */
     display: flex;

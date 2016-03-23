@@ -193,7 +193,16 @@ li a:active {
 
 /* classes after Updates*/
 .rounded-img{
-    border-radius: 50%;"
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    transition: filter 2s;
+}
+
+.rounded-img:hover {
+    opacity: 1.0;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%) ;  /* For IE8 and earlier */
 }
 
 .sitemap{
