@@ -1,0 +1,377 @@
+
+
+body {
+    font-family: 'robotolight',sans-serif;
+    color: gray;
+}
+
+.wrap{
+    margin:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    font-family: 'robotoregular',sans-serif;
+    font-size: 20px;
+    clear: both;
+}
+
+.logo {
+    width: 20%;
+    padding-top: 23px;
+}
+
+.banner {
+    width: 70%;
+    float: right;
+}
+
+input {
+    display: inline-block;
+    border-radius: 6px;
+    box-sizing: initial;
+    width: 71%;
+    height: 22px;
+    padding-left: 6px;
+}
+
+form input{
+    margin-bottom: 6px;
+}
+
+label {
+    float: left;
+    display: inline-block;
+    width: 18%;
+}
+
+section {
+        font-size: 14px;;
+
+}
+
+.dotted-border {
+    border-bottom : 1px dotted grey;
+    height: 40px;
+    margin-left: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+h3{
+    font-weight: 400;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/**/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: #A7A5A6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a:active {
+    background-color: red;
+}
+
+/* classes after Updates*/
+.rounded-img{
+    border-radius: 50%;"
+}
+
+.sitemap{
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 18px;
+    color:#949293;
+}
+
+.submit{
+    float: right;
+    width: 96px;
+    height: 24px;
+    margin-top: 15px;
+    margin-right: 40px;
+    color:#fff;
+}
+
+.grad 1{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4096ee+0,4096ee+100;%23044A6C */
+    background: #4096ee; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #4096ee 0%, #4096ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #4096ee 0%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #4096ee 0%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.grad {
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #065274; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#065274); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#065274); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#065274); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#065274); /* Standard syntax (must be last) */
+}
+
+.navGrad{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#FFFFFF, #DDDDDD); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#FFFFFF, #DDDDDD); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#FFFFFF, #DDDDDD); /* For Firefox 3.6 to 15 */
+    background: radial-gradient( #FFFFFF , #DDDDDD); /* Standard syntax (must be last) */
+}
+
+.navg{
+    clear:both;
+    color:#A7A5A6;
+}
+
+/*  Icomoon */
+.icomain{
+    float:right;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.icofloat{
+    display:inline-block;
+    float:left;
+}
+
+.icomargin{
+     margin-left: 4px;
+}
+
+.maincontent{
+    float:left;
+    width:67%;
+    padding-left: 20px;
+}
+
+
+.red{
+    color:#CC2D27;
+    font-weight: 400;
+}
+
+.green{
+    color:green;
+}
+
+.resource{
+    float:right;
+    width:28%;
+
+}
+
+.reaside{
+    margin-top:20px;
+}
+
+.figmain{
+    float:left;
+    display:inline-block;
+    width:25%;
+}
+
+figcaption{
+        margin-left: 60px;
+    margin-top: 12px;
+
+}
+
+.clear{
+    clear:both;
+}
+
+footer {
+    clear:both;
+    background-color:#58595B;
+    padding-left: 58px;
+}
+
+.service{
+    width:30%;
+    float:left;
+    color:#fff;
+}
+
+.blog{
+    width:30%;
+    float:left;
+    margin-left:4px;
+    color:#fff;
+}
+
+.contact{
+     width:35%;
+    float:left;
+    margin-left:4px;
+    color:#fff;
+}
+
+.servicelist{
+    color:#949293;
+}
+
+.copyright{
+     margin-left: -30px;
+}
+
+.search{
+    display: inline-block;
+    float:left;
+    width: 60%;
+    border: none;
+    border: none;
+    height: 25px;
+}
+
+.searchsub{
+    display: inline-block;
+    width: 40%;
+    color:#CC2D27;
+    border-radius: initial;
+    border: 1px solid red;
+    height: 25px;
+}
+
+#searchcontainer{
+    border: 1px solid #CC2D27;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    margin-top: 25px;
+}
+
+.resourcehead{
+    background-color: #B5B5B5;
+    color: #fff;
+    height: 37px;
+}
+.resourceh4{
+    margin: 14px;
+    font-weight: 400;
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
